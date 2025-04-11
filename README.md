@@ -54,18 +54,23 @@ To get a local copy up and running follow these simple example steps.
    git clone https://github.com/MOB-TIM-A/Personal-Website-2.git
    ```
 2. Open Folder
+  
   `cd Personal-Website-2`
 
 3. Install NPM packages
+  
    `npm install`
    
 4. Install VS Code Extention
+  
     https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 5. Running TailwindCLI for build css
+  
    `npm run start`
 
 6. Running Project 
+  
    shortcut open live server `Alt + L , ALT + O`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -79,33 +84,19 @@ To get a local copy up and running follow these simple example steps.
 
 ```sh
 ├── node_modules 
-├── public
-├── src/
-│   ├── assets/          # Contains static assets like images, fonts,etc
-│   ├── layouts/         # Defines the overall layout of different pages or sections of the application.
-│   │   └── HomePage/    # contains the layout specific to the home page and other
-│   │   │   └── index.tsx
-│   │   └── ....  
-│   │       
-│   ├── routers/         # Handles navigation within the application
-│   │   └── index.tsx
-│   ├── store/           # handle a state management library (like Redux, Zustand, or Context API),
-│   ├── utils/           # Contains utility functions that are used throughout the application
-│   ├── app.tsx  
-│   ├── index.css
-│   ├── main.tsx
-│   └── vite-env.d.ts
-├── index.html
+├── assets            # Folder untuk menyimpan aset statis (gambar, font, dsb)
+│   ├── logo.png    
+│   └── ...
+├── css               # Folder output untuk file CSS hasil build Tailwind
+│   └── main.css
+├── pages
+│   ├── contact.html  # Folder untuk Page HTML
+│   └── ...
+├── index.html        # Halaman utama website (homepage)
 ├── .gitignore
 ├── README.md
-├── bun.lockb
-├── eslint.config.js
-├── index.html
-├── package.json
-├── tsconfig.app.json
-├── tsconfig.json
-├── tsconfig.node.json
-├── vite.config.ts
+├── style.css         # File sumber TailwindCSS
+└── package.json
 
 ```
 
