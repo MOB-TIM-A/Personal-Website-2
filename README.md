@@ -54,20 +54,23 @@ To get a local copy up and running follow these simple example steps.
    git clone https://github.com/MOB-TIM-A/Personal-Website-2.git
    ```
 2. Open Folder
-  
-  `cd Personal-Website-2`
+   ```sh
+   cd Personal-Website-2
+   ```
 
 3. Install NPM packages
-  
-   `npm install`
+   ```sh
+   npm install
+   ```
    
 4. Install VS Code Extention
   
     https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 5. Running TailwindCLI for build css
-  
-   `npm run start`
+   ```sh
+   npm run start
+   ```
 
 6. Running Project 
   
