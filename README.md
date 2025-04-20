@@ -106,6 +106,28 @@ To get a local copy up and running follow these simple example steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## before doing the task
+- git checkout -b name_branch   => move and create new branch
+- git pull origin dev   => required before working on the project
+- git checkout name_branch => move to name_branch
+
+## Step Push github
+
+1. git add name_file
+2. git commit -m "Add / Update File"
+3. git push
+
+## after push github
+1. do a Pull Request from name_branch to dev
+- base: dev
+- compare: name_branch
+
+![PR](https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2024/05/image-6-770x415.png)
+
+2. Click Pull Request
+3. Share Link Pull Request to Whatsapp Group
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
