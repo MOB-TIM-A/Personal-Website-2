@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<img src="https://github.com/othneildrew/Best-README-Template/raw/main/images/logo.png" alt="Logo" width="80" height="80">
+<img src="./assets/logo.svg" style="background:white; padding: 0 1rem; border-radius: 1rem;" alt="Logo" width="80" height="50">
 
 <h3 align="center">Pet Care Profile</h3>
 
@@ -92,9 +92,6 @@ To get a local copy up and running follow these simple example steps.
 │   └── ...
 ├── css               # Folder output untuk file CSS hasil build Tailwind
 │   └── main.css
-├── pages
-│   ├── contact.html  # Folder untuk Page HTML
-│   └── ...
 ├── index.html        # Halaman utama website (homepage)
 ├── .gitignore
 ├── README.md
