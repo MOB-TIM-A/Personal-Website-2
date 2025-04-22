@@ -1,11 +1,11 @@
 const navbar = document.getElementById('navbar');
 const logo = document.getElementById('logo');
 const navLinks = document.querySelectorAll('.nav-link');
-const currentUrl = window.location.href;
+const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
 navLinks.forEach(link => {
-  const href = link.href;
-  if (currentUrl.includes(href)) {
+  const linkPath = link.getAttribute('href');
+  if (linkPath === currentPath) {
     link.classList.add('text-primary');
   }
 });
