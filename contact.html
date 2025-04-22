@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="./css/main.css" rel="stylesheet">
+</head>
+
+<body class="font-inter bg-white text-black">
+  <header id="navbar" class="w-full sticky top-0 z-30 transition-all duration-300 bg-white">
+    <div class="flex justify-between items-center p-4 max-w-screen-xl mx-auto">
+      <div class="text-lg font-bold flex items-center">
+        <img id="logo" src="./assets/logo.svg" alt="petcare" />
+      </div>
+      <nav class="hidden md:block">
+        <ul id="menu-list" class=" md:space-x-5 flex flex-col md:flex-row space-y-3 md:space-y-0 nav-links">
+          <li><a href="index.html" class="nav-link font-medium hover:text-primary">Home</a></li>
+          <li><a href="our-services.html" class="nav-link font-medium hover:text-primary">Our Service</a></li>
+          <li><a href="gallery.html" class="nav-link font-medium hover:text-primary">Gallery</a></li>
+          <li><a href="about-us.html" class="nav-link font-medium hover:text-primary">About Us</a></li>
+          <li class="md:hidden"><a href="contact-us.html" class="nav-link font-medium hover:text-primary">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <a href="./contact.html"
+          class="bg-white border border-black text-black py-2 px-4 rounded-3xl w-fit hover:bg-primary">Contact Us</a>
+        <button id="menu-toggle"
+          class="md:hidden text-2xl bg-transparent border-none cursor-pointer hover:text-primary ml-3">☰</button>
+      </div>
+    </div>
+  </header>
+  <!-- Mobile Nav Dialog -->
+  <div id="mobile-dialog"
+    class="fixed inset-0 z-50 bg-black w-full h-full bg-opacity-60 backdrop-blur-sm hidden transition-opacity duration-300">
+    <div class="bg-white text-black h-full flex flex-col items-end p-6 border">
+      <button id="close-dialog" class="text-2xl mb-4 hover:text-primary">✕</button>
+      <ul class="grid justify-center gap-3 text-end">
+        <li><a href="index.html" class="nav-link-mobile font-medium hover:text-primary block">Home</a></li>
+        <li><a href="our-services.html" class="nav-link-mobile font-medium hover:text-primary block">Our
+            Service</a></li>
+        <li><a href="gallery.html" class="nav-link-mobile font-medium hover:text-primary block">Gallery</a></li>
+        <li><a href="about-us.html" class="nav-link-mobile font-medium hover:text-primary block">About Us</a>
+        </li>
+        <li><a href="contact-us.html" class="nav-link-mobile font-medium hover:text-primary block">Contact
+            Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <section class="py-20">
+      <div class="max-w-[1280px] mx-auto px-4">
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="md:w-1/2 space-y-6">
+            <div>
+              <h3 class="text-2xl font-medium">Your Pet's Happiness, Our Priority. Everything Your Pet Needs, All in One
+                Place.</h3>
+              <p class="mt-2">Please contact whenever you want and need. Anything for your happiness and your pet.</p>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <img src="./assets/phone.svg" alt="" />
+                <p>+1258 3258 5679</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./assets/mail.svg" alt="" />
+                <p>admin@petcare.com</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./assets/map.svg" alt="" />
+                <p>181 Golden Street, Miami, Florida 33128</p>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2 space-y-6">
+            <div>
+              <h3 class="text-2xl font-medium">Connecting You with Care for Your Beloved Pets</h3>
+              <p class="mt-2">We're here to answer your questions and provide support.</p>
+            </div>
+            <form class="space-y-4">
+              <div class="flex flex-col">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" class="mt-1 p-3 border rounded-md" />
+              </div>
+              <div class="flex flex-col">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email" class="mt-1 p-3 border rounded-md" />
+              </div>
+              <div class="flex flex-col">
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Enter your message" class="mt-1 p-3 border rounded-md"></textarea>
+              </div>
+              <button type="submit"
+                class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-10">
+    <div class="max-w-[1280px] mx-auto px-4">
+      <div class="bg-black text-white p-12 rounded-3xl flex flex-col md:flex-row justify-between items-center gap-10">
+        <div class="flex flex-col gap-6 items-center md:items-start">
+          <img class="w-[106px]" src="./assets/logo-white.svg" alt="" />
+          <p>2025 Petcare, All right reserved</p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-6 text-center">
+          <a href="" class="text-white">Home</a>
+          <a href="" class="text-white">About Us</a>
+          <a href="" class="text-white">Our Services</a>
+          <a href="" class="text-white">Gallery</a>
+        </div>
+        <div class="flex gap-6">
+          <a href=""><img class="w-8 h-8" src="./assets/Instagram.png" alt="" /></a>
+          <a href=""><img class="w-8 h-8" src="./assets/Dribbble.png" alt="" /></a>
+          <a href=""><img class="w-8 h-8" src="./assets/Behance.png" alt="" /></a>
+          <a href=""><img class="w-8 h-8" src="./assets/LinkedIn.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+</body>
+<script src="./index.js"></script>
+</html>

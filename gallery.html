@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
     <link href="./css/main.css" rel="stylesheet">
 </head>
+
 <body class="font-inter">
     <header id="navbar" class="w-full sticky top-0 z-30 transition-all duration-300 bg-white">
         <div class="flex justify-between items-center p-4 max-w-screen-xl mx-auto">
@@ -12,8 +15,7 @@
                 <img id="logo" src="./assets/logo.svg" alt="petcare" />
             </div>
             <nav class="hidden md:block">
-                <ul id="menu-list"
-                    class=" md:space-x-5 flex flex-col md:flex-row space-y-3 md:space-y-0 nav-links">
+                <ul id="menu-list" class=" md:space-x-5 flex flex-col md:flex-row space-y-3 md:space-y-0 nav-links">
                     <li><a href="index.html" class="nav-link font-medium hover:text-primary">Home</a></li>
                     <li><a href="our-services.html" class="nav-link font-medium hover:text-primary">Our Service</a></li>
                     <li><a href="gallery.html" class="nav-link font-medium hover:text-primary">Gallery</a></li>
@@ -23,7 +25,9 @@
                 </ul>
             </nav>
             <div>
-                <a href="./contact-us.html" class="bg-white border border-black text-black py-2 px-4 rounded-3xl w-fit hover:bg-primary">Contact Us</a>
+                <a href="./contact.html"
+                    class="bg-white border border-black text-black py-2 px-4 rounded-3xl w-fit hover:bg-primary">Contact
+                    Us</a>
                 <button id="menu-toggle"
                     class="md:hidden text-2xl bg-transparent border-none cursor-pointer hover:text-primary ml-3">☰</button>
             </div>
@@ -127,6 +131,32 @@
             </div>
         </div>
     </div>
+    <!-- Footer -->
+    <footer class="py-10">
+        <div class="max-w-[1280px] mx-auto px-4">
+            <div
+                class="bg-black text-white p-12 rounded-3xl flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="flex flex-col gap-6 items-center md:items-start">
+                    <img class="w-[106px]" src="./assets/logo-white.svg" alt="" />
+                    <p>2025 Petcare, All right reserved</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 text-center">
+                    <a href="" class="text-white">Home</a>
+                    <a href="" class="text-white">About Us</a>
+                    <a href="" class="text-white">Our Services</a>
+                    <a href="" class="text-white">Gallery</a>
+                </div>
+                <div class="flex gap-6">
+                    <a href=""><img class="w-8 h-8" src="./assets/Instagram.png" alt="" /></a>
+                    <a href=""><img class="w-8 h-8" src="./assets/Dribbble.png" alt="" /></a>
+                    <a href=""><img class="w-8 h-8" src="./assets/Behance.png" alt="" /></a>
+                    <a href=""><img class="w-8 h-8" src="./assets/LinkedIn.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
 </body>
 <script src="./index.js"></script>
+
 </html>
