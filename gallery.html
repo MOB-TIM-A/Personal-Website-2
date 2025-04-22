@@ -5,28 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/main.css" rel="stylesheet">
 </head>
-<body>
-    <header class="w-full shadow-md">
-        <div class="flex justify-between items-center p-4 max-w-screen-xl mx-auto bg-white sticky top-0 z-50">
+<body class="font-inter">
+    <header id="navbar" class="w-full sticky top-0 z-30 transition-all duration-300 bg-white">
+        <div class="flex justify-between items-center p-4 max-w-screen-xl mx-auto">
             <div class="text-lg font-bold flex items-center">
-                <img src="./assets/logo.svg" alt="petcare" />
+                <img id="logo" src="./assets/logo.svg" alt="petcare" />
             </div>
-            <nav>
-                <ul class="flex space-x-5">
-                    <li><a href="index.html" class="text-gray-800 font-medium hover:text-orange-500">Home</a></li>
-                    <li><a href="our-services.html" class="text-gray-800 font-medium hover:text-orange-500">Our
-                            Service</a></li>
-                    <li><a href="gallery.html" class="text-gray-800 font-medium hover:text-orange-500">Gallery</a></li>
-                    <li><a href="about-us.html" class="text-gray-800 font-medium hover:text-orange-500">About Us</a>
-                    </li>
+            <nav class="hidden md:block">
+                <ul id="menu-list"
+                    class=" md:space-x-5 flex flex-col md:flex-row space-y-3 md:space-y-0 nav-links">
+                    <li><a href="index.html" class="nav-link font-medium hover:text-primary">Home</a></li>
+                    <li><a href="our-services.html" class="nav-link font-medium hover:text-primary">Our Service</a></li>
+                    <li><a href="gallery.html" class="nav-link font-medium hover:text-primary">Gallery</a></li>
+                    <li><a href="about-us.html" class="nav-link font-medium hover:text-primary">About Us</a></li>
+                    <li class="md:hidden"><a href="contact-us.html"
+                            class="nav-link font-medium hover:text-primary">Contact Us</a></li>
                 </ul>
             </nav>
-            <a href="./contact-us.html" class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600">Contact
-                Us</a>
-            <button class="md:hidden text-2xl bg-transparent border-none cursor-pointer">&#9776;</button>
+            <div>
+                <a href="./contact-us.html" class="bg-white border border-black text-black py-2 px-4 rounded-3xl w-fit hover:bg-primary">Contact Us</a>
+                <button id="menu-toggle"
+                    class="md:hidden text-2xl bg-transparent border-none cursor-pointer hover:text-primary ml-3">☰</button>
+            </div>
         </div>
     </header>
-    <p>test</p>
-</body>
+    <!-- Mobile Nav Dialog -->
+    <div id="mobile-dialog"
+        class="fixed inset-0 z-50 bg-black w-full h-full bg-opacity-60 backdrop-blur-sm hidden transition-opacity duration-300">
+        <div class="bg-white text-black h-full flex flex-col items-end p-6 border">
+            <button id="close-dialog" class="text-2xl mb-4 hover:text-primary">✕</button>
+            <ul class="grid justify-center gap-3 text-end">
+                <li><a href="index.html" class="nav-link-mobile font-medium hover:text-primary block">Home</a></li>
+                <li><a href="our-services.html" class="nav-link-mobile font-medium hover:text-primary block">Our
+                        Service</a></li>
+                <li><a href="gallery.html" class="nav-link-mobile font-medium hover:text-primary block">Gallery</a></li>
+                <li><a href="about-us.html" class="nav-link-mobile font-medium hover:text-primary block">About Us</a>
+                </li>
+                <li><a href="contact-us.html" class="nav-link-mobile font-medium hover:text-primary block">Contact
+                        Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg-white h-full max-w-screen-xl mx-auto py-6 sm:py-8 lg:py-12">
+        <div class="px-4">
+            <div class="w-1/2 mb-10 mx-auto text-center lg:text-left lg:mx-0">
+                <h3 class="lg:text-4xl font-semibold">Explore the Love and Care for Your Pets Through Our Photos</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:gap-4 z-0">
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-[500px]">
+                    <img src="./assets/img6.jpg" loading="lazy" alt="Photo by Martin Sanchez"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+                </a>
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-[500px]">
+                    <img src="./assets/img1.jpg" loading="lazy" alt="Photo by Lorenzo Herrera"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+                </a>
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-[500px]">
+                    <img src="./assets/service-image.png" loading="lazy" alt="Photo by Minh Pham"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+                </a>
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-[500px]">
+                    <img src="./assets/img7.jpg" loading="lazy" alt="Photo by Magicle"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+                </a>
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-[500px]">
+                    <img src="./assets/img4.jpg" loading="lazy" alt="Photo by Martin Sanchez"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+                </a>
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-[500px]">
+                    <img src="./assets/img2.jpg" loading="lazy" alt="Photo by Lorenzo Herrera"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+                </a>
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-[500px]">
+                    <img src="./assets/img3.jpg" loading="lazy" alt="Photo by Minh Pham"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+                </a>
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-[500px]">
+                    <img src="./assets/img5.jpg" loading="lazy" alt="Photo by Magicle"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
 </html>
