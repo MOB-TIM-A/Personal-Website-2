@@ -1,13 +1,12 @@
 const navbar = document.getElementById('navbar');
 const logo = document.getElementById('logo');
 const navLinks = document.querySelectorAll('.nav-link');
-const currentPath = window.location.pathname.split('/').pop();
+const currentPath = window.location.pathname.replace(/^\/$/, '/index.html');
 
-navLinks.forEach(link => {
-  const linkPath = link.getAttribute('href');
-  if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
+document.querySelectorAll('.nav-link').forEach(link => {
+  const hrefPath = new URL(link.href).pathname;
+  if (hrefPath === currentPath) {
     link.classList.add('text-primary');
-  } else {
   }
 });
 
