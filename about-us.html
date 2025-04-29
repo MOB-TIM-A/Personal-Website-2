@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about-us</title>
+    <link href="./css/main.css" rel="stylesheet">
+</head>
+
+<body class="font-inter bg-white text-black">
+    <header id="navbar" class="w-full sticky top-0 z-30 transition-all duration-300 bg-white">
+        <div class="flex justify-between items-center p-4 max-w-screen-xl mx-auto">
+            <div class="text-lg font-bold flex items-center">
+                <img id="logo" src="./assets/logo.svg" alt="petcare" />
+            </div>
+            <nav class="hidden md:block">
+                <ul id="menu-list" class=" md:space-x-5 flex flex-col md:flex-row space-y-3 md:space-y-0 nav-links">
+                    <li><a href="index.html" class="nav-link font-medium hover:text-primary">Home</a></li>
+                    <li><a href="our-services.html" class="nav-link font-medium hover:text-primary">Our Service</a></li>
+                    <li><a href="gallery.html" class="nav-link font-medium hover:text-primary">Gallery</a></li>
+                    <li><a href="about-us.html" class="nav-link font-medium hover:text-primary">About Us</a></li>
+                    <li class="md:hidden"><a href="contact.html" class="nav-link font-medium hover:text-primary">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="./contact.html" class="bg-white border border-black text-black py-2 px-4 rounded-3xl w-fit hover:bg-primary">Contact Us</a>
+                <button id="menu-toggle" class="md:hidden text-2xl bg-transparent border-none cursor-pointer hover:text-primary ml-3">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Dialog -->
+    <div id="mobile-dialog" class="fixed inset-0 z-50 bg-black w-full h-full bg-opacity-60 backdrop-blur-sm hidden transition-opacity duration-300">
+        <div class="bg-white text-black h-full flex flex-col items-end p-6 border">
+            <button id="close-dialog" class="text-2xl mb-4 hover:text-primary">✕</button>
+            <ul class="grid justify-center gap-3 text-end">
+                <li><a href="index.html" class="nav-link-mobile font-medium hover:text-primary block">Home</a></li>
+                <li><a href="our-services.html" class="nav-link-mobile font-medium hover:text-primary block">Our
+                    Service</a></li>
+                <li><a href="gallery.html" class="nav-link-mobile font-medium hover:text-primary block">Gallery</a></li>
+                <li><a href="about-us.html" class="nav-link-mobile font-medium hover:text-primary block">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <main>
+        <!-- Header about -->
+        <section id="header-about" class=" bg-white">
+            <div class="mx:auto w-full max-w-[1280px]">
+              <div class=" py-16 px-4 lg:px-0 flex flex-col gap-6 lg:gap-0 lg:flex-row items-center justify-between">
+                <div class="grid items-center gap-14 lg:grid-cols-2">
+                  <img class="w-full h-[436px] object-right-top" src="./assets/hero-about-image.png" alt="Woman with a cat" />
+                <div  class="flex flex-col justify-between h-full">
+                  <div class="flex flex-col gap-10">
+                    <h2 class="text-5xl font-inter leading-relaxed mb-1 ">
+                      Where your pets are at the heart of everything we do, Our mission is to provide exceptional care.
+                    </h2>
+                    <p class="text-base text-gray-700">
+                      From grooming to wellness, we cover every aspect of your pet’s needs.
+                      Our team stays updated on the latest in pet care to provide the best solutions for you and your furry friends.
+                    </p>
+                  </div>
+                  <div id="stats" class="flex gap-19 ">
+                    <div class="text-center">
+                      <span class="text-4xl font-bold text-amber-500">90K</span> <br/>
+                      Satisfied User
+                    </div>
+                    <div class="text-center">
+                      <span class="text-4xl font-bold text-amber-500">150K</span><br />
+                      Downloads
+                    </div>
+                    <div class="text-center">
+                      <span class="text-4xl font-bold text-amber-500">95%</span><br />
+                          Project Success
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+     <!-- Header about end-->
+
+    <!-- Team -->
+    <section class="py-20">
+      <div class="container mx-auto">
+        <div class="mb-8 text-center">
+          <div class="flex flex-col gap-20">
+          <h2 class="max-w-xl mx-auto text-4xl text-center font-medium-sans">Meet Our Team: Compassionate Experts Dedicated to Pets</h2>
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div class="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
+            <img class="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image1.png" alt="Dr. Jenny Wilson" />
+            <div class="flex flex-row items-center justify-between gap-2 p-3 border border-white shadow-2xl bg-opacity-80 rounded-2xl backdrop-blur-xl border-opacity-80 border-1 ">
+              <div>
+                <h4 class="text-base font-medium">Dr. Jenny Wilson</h4>
+                <p class="text-sm">veterinary</p>
+              </div>
+              <a href="" title="Learn more about Dr. Jenny Wilson"><img  class="w-8 h-8" src="./assets/button-icon.svg" alt="" /></a>
+            </div>
+          </div>
+          
+          <div class="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
+            <img class="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image3.png" alt="Dr. Jane Cooper" />
+            <div class="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
+              <div>
+              <h4 class="text-base font-medium">Dr. Jane Cooper</h4>
+              <p class="text-black-600">Veterinarian</p>
+            </div>
+            <a href="" title="Learn more about Dr. Jenny Wilson"><img  class="w-8 h-8" src="./assets/button-icon.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
+            <img class="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image2.png" alt="Dr. Jacob Jones" />
+            <div class="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
+              <div>
+                <h4 class="text-base font-medium">Dr. Jacob Jones</h4>
+                <p class="text-black-600">Veterinarian</p>
+              </div>
+              <a href="" title="Learn more about Dr. Jenny Wilson"><img  class="w-8 h-8" src="./assets/button-icon.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
+            <img class="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image7.png" alt="Dr. Guy Hawkins " />
+            <div class="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
+              <div>
+                <h4 class=" text-base font-medium">Dr. Guy Hawkins</h4>
+                <p class="text-black-600">Veterinarian</p>
+              </div>
+              <a href="" title="Learn more about Dr. Jenny Wilson"><img  class="w-8 h-8" src="./assets/button-icon.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
+            <img class="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image5.png" alt="Dr. Kristin Watson" />
+            <div class="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
+             <div>
+              <h4 class="text-lg font-semibold">Dr. Kristin Watson</h4>
+              <p class="text-black-600">Veterinarian</p>
+            </div>
+              <a href="" title="Learn more about Dr. Jenny Wilson"><img  class="w-8 h-8" src="./assets/button-icon.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
+            <img class="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image6.png" alt="Dr. Theresa Webb" />
+            <div class="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
+             <div>
+              <h4 class="text-lg font-semibold">Dr. Theresa Webb</h4>
+              <p class="text-black-600">Veterinarian</p>
+             </div> 
+             <a href="" title="Learn more about Dr. Jenny Wilson"><img  class="w-8 h-8" src="./assets/button-icon.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
+            <img class="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image4.png" alt="Dr. Selena Grey" />
+            <div class="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
+             <div>
+              <h4 class="text-lg font-medium ">Dr. Selena Grey</h4>
+              <p class="text-black-600">Veterinarian</p>
+             </div>
+              <a href="" title="Learn more about Dr. Jenny Wilson"><img  class="w-8 h-8" src="./assets/button-icon.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
+            <img class="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image8.png" alt="Dr. Kathryn Murpy" />
+            <div class="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
+              <div>
+                <h4 class="text-lg font-medium">Dr. Kathryn Murpy</h4>
+                <p class="text-black-600">Veterinarian</p>
+              </div>
+              <a href="" title="Learn more about Dr. Jenny Wilson"><img  class="w-8 h-8" src="./assets/button-icon.svg" alt="" /></a>
+            </div>
+          </div>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team end -->
+  
+      <!-- Compassionate start-->
+      <div class="max-w-7xl mx-auto p-6 bg-gray-100">
+        <h2 class="text-4xl  text-center mb-6">Compassionate Care 
+            for Every Paw, Every Day
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                  <rect width="52" height="52" rx="26" fill="#F5F5F5"/>
+                  <path d="M36.6711 24.1606V36.6712" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.6628 36.6711H12.6611" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26 32.6694V32.6694C28.21 32.6694 30.0016 34.461 30.0016 36.6711V36.6711C30.0016 37.4078 29.4044 38.005 28.6677 38.005H23.3322C22.5955 38.005 21.9983 37.4078 21.9983 36.6711V36.6711C21.9983 34.461 23.7899 32.6694 26 32.6694Z" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.3291 24.158V36.6712" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M35.0039 24.6662V24.6662C36.6614 24.6662 38.0051 23.3225 38.0051 21.665V21.4956C38.0051 20.9518 37.8572 20.4183 37.577 19.9523L34.7758 15.2903C34.2946 14.4884 33.4287 13.997 32.4935 13.9951H19.5068C18.5703 13.9951 17.7024 14.4862 17.22 15.2889L14.418 19.9523C14.1396 20.4188 13.9934 20.9523 13.9951 21.4956V21.665C13.9951 23.3225 15.3389 24.6662 16.9964 24.6662V24.6662" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M39.3391 36.6711H35.3374" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M35.0038 24.6662C33.6757 24.6662 32.5054 23.7935 32.1263 22.5206C32.1139 22.4622 32.0623 22.4204 32.0026 22.4204C31.9429 22.4204 31.8913 22.4622 31.8789 22.5206C31.4999 23.7936 30.3295 24.6662 29.0013 24.6662C27.6732 24.6662 26.5028 23.7936 26.1238 22.5206C26.1114 22.4622 26.0598 22.4204 26.0001 22.4204C25.9404 22.4204 25.8888 22.4622 25.8764 22.5206C25.4974 23.7936 24.327 24.6662 22.9988 24.6662C21.6707 24.6662 20.5003 23.7936 20.1213 22.5206C20.1089 22.4622 20.0573 22.4204 19.9976 22.4204C19.9379 22.4204 19.8863 22.4622 19.8739 22.5206C19.4948 23.7935 18.3245 24.6662 16.9963 24.6662" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M26.3339 28.6683C26.3337 28.8524 26.1844 29.0015 26.0003 29.0014C25.8162 29.0013 25.667 28.8521 25.667 28.6681C25.6669 28.484 25.816 28.3347 26 28.3344C26.0886 28.3343 26.1736 28.3695 26.2362 28.4321C26.2989 28.4948 26.334 28.5797 26.3339 28.6683" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M30.3356 30.0021C30.3354 30.1861 30.1861 30.3352 30.002 30.3351C29.8179 30.3351 29.6688 30.1859 29.6687 30.0018C29.6686 29.8177 29.8177 29.6684 30.0017 29.6682C30.0903 29.6681 30.1753 29.7032 30.2379 29.7659C30.3006 29.8285 30.3357 29.9135 30.3356 30.0021" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22.3322 30.0021C22.332 30.1861 22.1826 30.3352 21.9986 30.3351C21.8145 30.3351 21.6653 30.1859 21.6653 30.0018C21.6652 29.8177 21.8142 29.6684 21.9983 29.6682C22.0869 29.6681 22.1719 29.7032 22.2345 29.7659C22.2972 29.8285 22.3323 29.9135 22.3322 30.0021" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+              <h2 class="text-lg font-semibold ml-2">COMPASSION</h2>
+              <p>We treat every pet with kindness and empathy, understanding their unique needs and emotions.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                  <svg class="h-8 w-8 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1a9 9 0 100 18 9 9 0 000-18zm0 2a7 7 0 100 14 7 7 0 000-14zM8 7h4v1H8V7zm0 2h4v1H8v-1zm0 2h4v1H8v-1z"/></svg>
+                  
+              </div>
+              <h2 class="text-lg font-semibold ml-2">INTEGRITY</h2>
+              <p>We are committed to honesty, transparency, and ethical practices in all aspects of our care.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                  <svg class="h-8 w-8 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1a9 9 0 100 18 9 9 0 000-18zm0 2a7 7 0 100 14 7 7 0 000-14zM8 7h4v1H8V7zm0 2h4v1H8v-1zm0 2h4v1H8v-1z"/></svg>
+                 
+              </div>
+              <h2 class="text-lg font-semibold ml-2">EXCELLENCE</h2>
+              <p>We strive to provide the highest standard of veterinary care through continuous learning and dedication.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                  <svg class="h-8 w-8 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1a9 9 0 100 18 9 9 0 000-18zm0 2a7 7 0 100 14 7 7 0 000-14zM8 7h4v1H8V7zm0 2h4v1H8v-1zm0 2h4v1H8v-1z"/></svg>
+                  
+              </div>
+              <h2 class="text-lg font-semibold ml-2">COLLABORATION</h2>
+              <p>We work closely with pet owners and a team of skilled professionals to ensure the best outcomes for each pet.</p>
+          </div>
+      </div>
+  </div>
+      
+      <!-- Compassionate end -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10">
+        <div class="max-w-[1280px] mx-auto px-4">
+            <div
+                class="bg-black text-white p-12 rounded-3xl flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="flex flex-col gap-6 items-center md:items-start">
+                    <img class="w-[106px]" src="./assets/logo-white.svg" alt="" />
+                    <p>2025 Petcare, All right reserved</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 text-center">
+                    <a href="" class="text-white">Home</a>
+                    <a href="about-us.html" class="text-white">About Us</a>
+                    <a href="" class="text-white">Our Services</a>
+                    <a href="gallery.html" class="text-white">Gallery</a>
+                </div>
+                <div class="flex gap-6">
+                    <a href=""><img class="w-8 h-8" src="./assets/Instagram.png" alt="" /></a>
+                    <a href=""><img class="w-8 h-8" src="./assets/Dribbble.png" alt="" /></a>
+                    <a href=""><img class="w-8 h-8" src="./assets/Behance.png" alt="" /></a>
+                    <a href=""><img class="w-8 h-8" src="./assets/LinkedIn.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End -->
+</body>
+
+<script src="./index.js"></script>
+
+</html>
