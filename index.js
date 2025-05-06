@@ -39,3 +39,17 @@ mobileDialog.addEventListener('click', (e) => {
     mobileDialog.classList.add('hidden');
   }
 });
+
+const accordions = document.querySelectorAll(".accordion-item");
+
+accordions.forEach((accordion) => {
+  accordion.addEventListener("toggle", () => {
+    if (accordion.open) {
+      document.querySelectorAll(".accordion-item").forEach((detail) => {
+        if (detail !== accordion) {
+          detail.removeAttribute("open");
+        }
+      });
+    }
+  });
+});
