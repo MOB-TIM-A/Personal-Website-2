@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Our Services</title>
+  </head>
+
+  <body class="text-black bg-white font-inter">
+    <!-- Header -->
+    <header id="navbar" class="sticky top-0 z-30 w-full transition-all duration-300 bg-white">
+      <div class="flex items-center justify-between max-w-screen-xl p-4 mx-auto">
+        <div class="flex items-center text-lg font-bold">
+          <img id="logo" src="./assets/logo.svg" alt="petcare" />
+        </div>
+        <nav class="hidden md:block">
+          <ul id="menu-list" class="flex flex-col space-y-3 md:space-x-5 md:flex-row md:space-y-0 nav-links">
+            <li><a href="index.html" class="font-medium nav-link hover:text-primary">Home</a></li>
+            <li><a href="our-services.html" class="font-medium nav-link hover:text-primary">Our Service</a></li>
+            <li><a href="gallery.html" class="font-medium nav-link hover:text-primary">Gallery</a></li>
+            <li><a href="about-us.html" class="font-medium nav-link hover:text-primary">About Us</a></li>
+            <li class="md:hidden"><a href="contact.html" class="font-medium nav-link hover:text-primary">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a href="./contact.html" class="px-4 py-2 text-black bg-white border border-black rounded-3xl w-fit hover:bg-primary">Contact Us</a>
+          <button id="menu-toggle" class="ml-3 text-2xl bg-transparent border-none cursor-pointer md:hidden hover:text-primary">☰</button>
+        </div>
+      </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Mobile Nav Dialog -->
+    <div id="mobile-dialog" class="fixed inset-0 z-50 hidden w-full h-full transition-opacity duration-300 bg-black bg-opacity-60 backdrop-blur-sm">
+      <div class="flex flex-col items-end h-full p-6 text-black bg-white border">
+        <button id="close-dialog" class="mb-4 text-2xl hover:text-primary">✕</button>
+        <ul class="grid justify-center gap-3 text-end">
+          <li><a href="index.html" class="block font-medium nav-link-mobile hover:text-primary">Home</a></li>
+          <li><a href="our-services.html" class="block font-medium nav-link-mobile hover:text-primary">Our Service</a></li>
+          <li><a href="gallery.html" class="block font-medium nav-link-mobile hover:text-primary">Gallery</a></li>
+          <li><a href="about-us.html" class="block font-medium nav-link-mobile hover:text-primary">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End of Mobile Nav Dialog -->
+
+    <main>
+      <!-- 1st section -->
+      <section id="first-section" class="pt-10 pb-20">
+        <div class="max-w-[1280px] mx-auto px-6">
+          <div class="mb-10">
+            <h1 class="mb-5 text-4xl font-semibold text-center md:text-left">Your Pet's Happiness, Our Top Priority Always!</h1>
+            <p class="text-center md:text-left">Discover personalized care and expert services designed to keep your furry friends healthy, happy, and full of joy.</p>
+          </div>
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div class="flex flex-col order-2 gap-5 md:order-1">
+              <details class="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-primary open:bg-secondary rounded-xl accordion-item" open>
+                <summary class="text-xl font-medium list-none cursor-pointer">Comprehensive Services</summary>
+                <p class="mt-1">From grooming and training to medical check-ups and daycare, we offer all-in-one solutions for your pet's well-being.</p>
+              </details>
+              <details class="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-primary open:bg-secondary rounded-xl accordion-item">
+                <summary class="text-xl font-medium list-none cursor-pointer">Certified Experts</summary>
+                <p class="mt-1">From grooming and training to medical check-ups and daycare, we offer all-in-one solutions for your pet's well-being.</p>
+              </details>
+              <details class="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-primary open:bg-secondary rounded-xl accordion-item">
+                <summary class="text-xl font-medium list-none cursor-pointer">State of the-Art Facilities</summary>
+                <p class="mt-1">From grooming and training to medical check-ups and daycare, we offer all-in-one solutions for your pet's well-being.</p>
+              </details>
+              <details class="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-primary open:bg-secondary rounded-xl accordion-item">
+                <summary class="text-xl font-medium list-none cursor-pointer">Trusted by Pet Owners</summary>
+                <p class="mt-1">From grooming and training to medical check-ups and daycare, we offer all-in-one solutions for your pet's well-being.</p>
+              </details>
+            </div>
+            <div class="w-full order-1 md:order-2 bg-[var(--color-grey)] rounded-3xl overflow-hidden">
+              <img src="./assets/img4.jpg" alt="petcare-service-img1" loading="lazy" class="object-cover w-full h-full shadow-sm" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2nd Section -->
+      <section id="second-section" class="py-15 bg-[var(--color-grey)]">
+        <div class="max-w-[1280px] mx-auto px-6">
+          <div class="grid grid-cols-1 gap-8 p-6 bg-white shadow-sm md:grid-cols-2 rounded-3xl">
+            <div class="rounded-xl bg-[var(--color-grey)] overflow-hidden">
+              <img src="./assets/img1.jpg" alt="petcare-service-img2" loading="lazy" class="object-cover w-full h-full shadow-sm" />
+            </div>
+            <div>
+              <h2 class="mb-4 text-2xl font-semibold">Our Services</h2>
+              <div class="flex flex-col gap-5">
+                <div class="w-full py-3 px-3 flex gap-5 rounded-xl bg-[var(--color-grey)] shadow-md border border-transparent group hover:border-primary hover:bg-secondary transition-colors">
+                  <img src="./assets/service-icon1.png" alt="" class="w-16 h-16 my-auto rounded-lg" />
+                  <div class="flex flex-col gap-3 transition-colors group-hover:text-primary group-hover:border-primary">
+                    <h3 class="font-semibold">Pet Supplies</h3>
+                    <div class="flex flex-wrap gap-2">
+                      <div class="px-4 py-1 text-sm border md:text-base rounded-2xl">Toys</div>
+                      <div class="px-4 py-1 text-sm border md:text-base rounded-2xl">Accessories</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full py-3 px-3 flex gap-5 rounded-xl bg-[var(--color-grey)] shadow-md border border-transparent group hover:border-primary hover:bg-secondary transition-colors">
+                  <img src="./assets/service-icon2.png" alt="" class="w-16 h-16 my-auto rounded-lg" />
+                  <div class="flex flex-col gap-3 transition-colors group-hover:text-primary group-hover:border-primary">
+                    <h3 class="font-semibold">Grooming Services</h3>
+                    <div class="flex flex-wrap gap-2">
+                      <div class="px-4 py-1 text-sm border md:text-base rounded-2xl">Nail Trimming</div>
+                      <div class="px-4 py-1 text-sm border md:text-base rounded-2xl">Ear Cleaning</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full py-3 px-3 flex gap-5 rounded-xl bg-[var(--color-grey)] shadow-md border border-transparent group hover:border-primary hover:bg-secondary transition-colors">
+                  <img src="./assets/service-icon3.png" alt="" class="w-16 h-16 my-auto rounded-lg" />
+                  <div class="flex flex-col gap-3 transition-colors group-hover:text-primary group-hover:border-primary">
+                    <h3 class="font-semibold">Veterinary Support</h3>
+                    <div class="flex flex-wrap gap-2">
+                      <div class="px-4 py-1 text-sm border md:text-base rounded-2xl">Health check-ups</div>
+                      <div class="px-4 py-1 text-sm border md:text-base rounded-2xl">Vaccinations</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full py-3 px-3 flex gap-5 rounded-xl bg-[var(--color-grey)] shadow-md border border-transparent group hover:border-primary hover:bg-secondary transition-colors">
+                  <img src="./assets/service-icon4.png" alt="" class="w-16 h-16 my-auto rounded-lg" />
+                  <div class="flex flex-col gap-3 transition-colors group-hover:text-primary group-hover:border-primary">
+                    <h3 class="font-semibold">Pet Adoption Assistance</h3>
+                    <div class="flex flex-wrap gap-2">
+                      <div class="px-4 py-1 text-sm border md:text-base rounded-2xl">Local Shelters</div>
+                      <div class="px-4 py-1 text-sm border md:text-base rounded-2xl">Perfect Pet</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full py-3 px-3 flex gap-5 rounded-xl bg-[var(--color-grey)] shadow-md border border-transparent group hover:border-primary hover:bg-secondary transition-colors">
+                  <img src="./assets/service-icon5.png" alt="" class="w-16 h-16 my-auto rounded-lg" />
+                  <div class="flex flex-col gap-3 transition-colors gap group-hover:text-primary group-hover:border-primary">
+                    <h3 class="font-semibold">Pet Boarding & Daycare</h3>
+                    <div class="flex flex-wrap gap-2">
+                      <div class="px-4 py-1 text-sm border md:text-base rounded-2xl">Playtime</div>
+                      <div class="px-4 py-1 text-sm border md:text-base rounded-2xl">Feeding</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-[var(--color-grey)]">
+      <div class="max-w-[1280px] mx-auto px-4">
+        <div class="flex flex-col items-center justify-between gap-10 p-12 text-white bg-black rounded-3xl md:flex-row">
+          <div class="flex flex-col items-center gap-6 md:items-start">
+            <img class="w-[106px]" src="./assets/logo-white.svg" alt="" />
+            <p>2025 Petcare, All right reserved</p>
+          </div>
+          <div class="flex flex-col gap-6 text-center md:flex-row">
+            <a href="./index.html" class="text-white">Home</a>
+            <a href="./about.html" class="text-white">About Us</a>
+            <a href="./our-services.html" class="text-white">Our Services</a>
+            <a href="./gallery.html" class="text-white">Gallery</a>
+          </div>
+          <div class="flex gap-6">
+            <a href="" title="Instagram"><img class="w-8 h-8" src="./assets/Instagram.png" alt="" /></a>
+            <a href="" title="Dribble"><img class="w-8 h-8" src="./assets/Dribbble.png" alt="" /></a>
+            <a href="" title="Behance"><img class="w-8 h-8" src="./assets/Behance.png" alt="" /></a>
+            <a href="" title="LinkedIn"><img class="w-8 h-8" src="./assets/LinkedIn.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>
